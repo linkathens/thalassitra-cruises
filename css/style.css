@@ -176,6 +176,10 @@ transition:all .25s ease;
 
 }
 
+.mobile-title{
+    display:none;
+}
+
 @media (max-width:600px){
 
     .header{
@@ -205,4 +209,12 @@ transition:all .25s ease;
         min-height:64px;
         border-radius:18px;
     }
+}
+
+.desktop-title{
+    display:none;
+}
+
+.mobile-title{
+    display:block;
 }
