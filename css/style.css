@@ -130,8 +130,8 @@ body{
     top:250px;
     left:50%;
     transform:translateX(-50%);
-    font-family:"ThalassitraTitle", sans-serif;
-    font-weight:700;
+    font-family:"DM Serif Display", serif;
+    font-weight:400;
     z-index:10;
     width:1000px;
     color:#1f5d94;
