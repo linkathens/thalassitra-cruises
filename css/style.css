@@ -192,11 +192,11 @@ transition:all .25s ease;
     }
 
     .hero-title{
-        top:75px;
-        width:90%;
-        font-size:38px;
-        line-height:1.05;
-    }
+    top:60px;
+    width:90%;
+    font-size:34px;
+    line-height:1.1;
+}
 
     .quick-links{
         grid-template-columns:1fr;
