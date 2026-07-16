@@ -143,6 +143,7 @@ body{
     left:50%;
     transform:translateX(-50%);
     z-index:10;
+    width: 1000px;
 
     color:#1f5d94;
     font-size:75px;
