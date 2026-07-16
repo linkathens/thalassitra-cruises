@@ -16,7 +16,7 @@ body{
 
 .header{
     position:relative;
-    height:115px;
+    height:150px;
     background:#1f4d78;
     border-bottom:2px solid #d3a32b;
 }
@@ -25,8 +25,8 @@ body{
     position:absolute;
     left:50%;
     transform:translateX(-50%);
-    top:15px;
-    width:170px;
+    bottom:-70px;
+    width:220px;
     height:auto;
     z-index:100;
 }
