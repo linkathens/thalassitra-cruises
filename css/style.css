@@ -136,12 +136,6 @@ body{
     height:100%;
 }
 
-.logo{
-    height:70px;
-    width:auto;
-    display:block;
-}
-
 .hero-title{
     position:absolute;
     top:250px;
