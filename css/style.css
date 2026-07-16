@@ -26,9 +26,9 @@ body{
     position:absolute;
     left:50%;
     transform:translateX(-50%);
-    width:330px;
+    width:370px;
     height:auto;
-    top:120px;
+    top:150px;
     z-index:100;
 }
 
