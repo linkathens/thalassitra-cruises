@@ -141,8 +141,8 @@ body{
     width:auto;
     display:block;
 }
-    
-    .hero-title{
+
+.hero-title{
     position:absolute;
     top:250px;
     left:50%;
@@ -150,8 +150,7 @@ body{
     font-family:"SeoulHangangC", sans-serif;
     font-weight:700;
     z-index:10;
-    width: 1000px;
-
+    width:1000px;
     color:#1f5d94;
     font-size:75px;
     line-height:1.15;
