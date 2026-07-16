@@ -192,7 +192,7 @@ transition:all .25s ease;
     }
 
     .hero-title{
-        top:135px;
+        top:75px;
         width:90%;
         font-size:38px;
         line-height:1.05;
@@ -217,4 +217,10 @@ transition:all .25s ease;
 
 .mobile-title{
     display:block;
+.desktop-title{
+    display:none;
 }
+
+.mobile-title{
+    display:block;
+}}
