@@ -175,3 +175,34 @@ transition:all .25s ease;
         inset 0 1px 0 rgba(255,255,255,.35);
 
 }
+
+@media (max-width:600px){
+
+    .header{
+        height:180px;
+    }
+
+    .logo{
+        width:185px;
+        top:65px;
+    }
+
+    .hero-title{
+        top:135px;
+        width:90%;
+        font-size:38px;
+        line-height:1.05;
+    }
+
+    .quick-links{
+        grid-template-columns:1fr;
+        gap:14px;
+        padding:22px 18px;
+    }
+
+    .quick-button{
+        width:100%;
+        min-height:64px;
+        border-radius:18px;
+    }
+}
