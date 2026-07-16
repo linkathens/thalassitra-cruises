@@ -111,6 +111,26 @@ body{
 
     text-align:center;
 
+    .header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:100;
+    padding:20px 0;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:0 auto;
+}
+
+.logo{
+    height:70px;
+    width:auto;
+    display:block;
+}
     font-size:22px;
 
 }
