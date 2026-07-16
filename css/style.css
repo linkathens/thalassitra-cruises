@@ -217,10 +217,6 @@ transition:all .25s ease;
 
 .mobile-title{
     display:block;
-.desktop-title{
-    display:none;
 }
 
-.mobile-title{
-    display:block;
-}}
+}
