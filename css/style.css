@@ -95,6 +95,13 @@ body{
     border:3px solid #c89b1d;
 
     border-radius:40px;
+    background:linear-gradient(to bottom,#2c73ad,#19588b);
+
+box-shadow:
+    0 6px 14px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.20);
+
+transition:all .25s ease;
 
     display:flex;
 
@@ -138,4 +145,19 @@ body{
     font-size:75px;
     line-height:1.15;
     text-align:center;
+}
+.quick-button:hover{
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 22px rgba(0,0,0,.25),
+        inset 0 1px 0 rgba(255,255,255,.30);
+}
+
+.quick-button img:last-child{
+    transition:transform .25s ease;
+}
+
+.quick-button:hover img:last-child{
+    transform:translateX(4px);
 }
