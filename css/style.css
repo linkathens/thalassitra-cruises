@@ -191,10 +191,10 @@ transition:all .25s ease;
         top:65px;
     }
 
-    .hero-title{
-    top:60px;
+.hero-title{
+    top:50px;
     width:90%;
-    font-size:34px;
+    font-size:31px;
     line-height:1.1;
 }
 
