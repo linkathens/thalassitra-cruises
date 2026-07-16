@@ -115,12 +115,11 @@ body{
 }
 
 .quick-button span{
-
     flex:1;
-
     text-align:center;
+}
 
-    .header{
+.header{
     position:absolute;
     top:0;
     left:0;
