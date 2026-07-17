@@ -469,12 +469,28 @@ transition:all .25s ease;
 
 /* ===== SMALL HEADER FOR INNER PAGES ===== */
 
-.cruises-page .logo,
-.cruise-detail-page .logo{
-    width:220px;
-}
-
 .cruises-page .header,
 .cruise-detail-page .header{
-    height:180px;
+    height:170px;
+}
+
+.cruises-page .header .container,
+.cruise-detail-page .header .container{
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.cruises-page .logo,
+.cruise-detail-page .logo{
+    position:static;
+    width:160px;
+    max-width:100%;
+    margin:0;
+    transform:none;
+}
+
+.cruises-intro{
+    padding:35px 20px 30px;
 }
