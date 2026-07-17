@@ -466,3 +466,15 @@ transition:all .25s ease;
 
     color:#444;
 }
+
+/* ===== SMALL HEADER FOR INNER PAGES ===== */
+
+.cruises-page .logo,
+.cruise-detail-page .logo{
+    width:220px;
+}
+
+.cruises-page .header,
+.cruise-detail-page .header{
+    height:180px;
+}
