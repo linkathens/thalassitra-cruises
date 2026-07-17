@@ -471,26 +471,20 @@ transition:all .25s ease;
 
 .cruises-page .header,
 .cruise-detail-page .header{
-    height:170px;
-}
-
-.cruises-page .header .container,
-.cruise-detail-page .header .container{
-    height:100%;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    height:180px;
 }
 
 .cruises-page .logo,
 .cruise-detail-page .logo{
-    position:static;
-    width:160px;
-    max-width:100%;
+    position:absolute;
+    left:50%;
+    top:12px;
+    transform:translateX(-50%);
+    width:170px;
+    height:auto;
     margin:0;
-    transform:none;
 }
 
 .cruises-intro{
-    padding:35px 20px 30px;
+    padding:38px 20px 30px;
 }
