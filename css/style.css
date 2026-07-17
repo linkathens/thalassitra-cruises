@@ -235,29 +235,37 @@ transition:all .25s ease;
 
 .cruises-intro{
     text-align:center;
-    padding:55px 20px 35px;
+    padding:45px 20px 35px;
+    background:transparent;
 }
 
 .cruises-intro h1{
-    margin:0 0 10px;
+    margin:0 0 12px;
     font-family:"DM Serif Display", serif;
     font-size:58px;
     font-weight:400;
     text-transform:uppercase;
     line-height:1;
+    color:#ffffff;
 }
 
 .cruises-intro p{
     margin:0;
-    font-size:18px;
-    line-height:1.4;
-    color:#333;
+    font-family:"DM Serif Display", serif;
+    font-size:20px;
+    font-weight:400;
+    line-height:1.35;
+    color:#ffffff;
+}
+
+.cruises-cover{
+    margin-top:-120px;
 }
 
 .cruises-cover img{
     display:block;
     width:100%;
-    max-height:620px;
+    height:700px;
     object-fit:cover;
 }
 
@@ -478,9 +486,9 @@ transition:all .25s ease;
 .cruise-detail-page .logo{
     position:absolute;
     left:50%;
-    top:12px;
+    top:28px;
     transform:translateX(-50%);
-    width:170px;
+    width:145px;
     height:auto;
     margin:0;
 }
