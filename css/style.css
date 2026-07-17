@@ -404,3 +404,65 @@ transition:all .25s ease;
         font-size:28px;
     }
 }
+
+/* ===== CRUISE DETAIL PAGE ===== */
+
+.cruise-detail-page{
+    background:#f3f1f4;
+}
+
+.cruise-detail-hero{
+    width:100%;
+}
+
+.cruise-detail-hero img{
+    display:block;
+    width:100%;
+    height:min(70vh,700px);
+    object-fit:cover;
+}
+
+.cruise-detail-intro{
+    width:min(1100px, calc(100% - 40px));
+    margin:60px auto;
+}
+
+.cruise-detail-title{
+    display:inline-flex;
+    align-items:center;
+    gap:20px;
+
+    padding:18px 34px;
+
+    border-radius:18px;
+
+    background:#8a2f8f;
+    color:#fff;
+}
+
+.cruise-detail-title span{
+    font-size:22px;
+    font-weight:bold;
+    opacity:.8;
+}
+
+.cruise-detail-title h1{
+    margin:0;
+
+    font-family:"DM Serif Display", serif;
+    font-size:48px;
+    font-weight:400;
+    line-height:1.05;
+}
+
+.cruise-detail-intro p{
+
+    max-width:760px;
+
+    margin:35px 0 0;
+
+    font-size:20px;
+    line-height:1.8;
+
+    color:#444;
+}
