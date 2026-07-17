@@ -511,13 +511,17 @@ transition:all .25s ease;
 
 .cruises-page .logo,
 .cruise-detail-page .logo{
+
     position:absolute;
+
     left:50%;
-    top:28px;
+
+    top:38px;
+
     transform:translateX(-50%);
-    width:145px;
-    height:auto;
-    margin:0;
+
+    width:125px;
+
 }
 
 .cruises-intro{
