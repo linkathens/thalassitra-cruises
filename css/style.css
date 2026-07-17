@@ -488,3 +488,22 @@ transition:all .25s ease;
 .cruises-intro{
     padding:38px 20px 30px;
 }
+
+@media (max-width:600px){
+
+    .cruises-page .header,
+    .cruise-detail-page .header{
+        height:135px;
+    }
+
+    .cruises-page .logo,
+    .cruise-detail-page .logo{
+        top:8px;
+        width:125px;
+    }
+
+    .cruise-grid{
+        grid-template-columns:1fr;
+    }
+
+}
