@@ -610,3 +610,79 @@ height:220px;
     transform:scale(1.03);
     transition:.3s;
 }
+
+/* ===========================
+   Cruise Stops
+=========================== */
+
+.cruise-stops{
+    max-width:1200px;
+    margin:90px auto;
+    padding:0 40px;
+}
+
+.stop-card{
+    display:grid;
+    grid-template-columns:340px 1fr;
+    gap:35px;
+
+    align-items:center;
+
+    margin-bottom:60px;
+    padding-bottom:60px;
+
+    border-bottom:1px solid #e7e7e7;
+}
+
+.stop-card:last-child{
+    border-bottom:none;
+}
+
+.stop-card img{
+    width:100%;
+    height:240px;
+
+    object-fit:cover;
+
+    border-radius:16px;
+}
+
+.stop-number{
+    display:inline-block;
+
+    margin-bottom:14px;
+
+    color:#8a2f8f;
+
+    font-size:15px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+.stop-content h3{
+    margin:0 0 15px;
+
+    font-family:"DM Serif Display",serif;
+    font-size:34px;
+    color:#1f5d94;
+}
+
+.stop-content p{
+    margin:0;
+
+    line-height:1.8;
+    color:#555;
+}
+
+@media (max-width:768px){
+
+    .cruise-stops{
+        padding:0 20px;
+    }
+
+    .stop-card{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+}
