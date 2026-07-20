@@ -546,3 +546,48 @@ transition:all .25s ease;
     }
 
 }
+
+/* ==========================
+   Cruise Gallery
+========================== */
+
+.cruise-detail-gallery{
+    max-width:1200px;
+    margin:80px auto;
+    padding:0 40px;
+}
+
+.cruise-detail-gallery h2{
+    margin-bottom:30px;
+}
+
+.cruise-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+    gap:22px;
+}
+
+.cruise-gallery img{
+    width:100%;
+    height:340px;
+    object-fit:cover;
+    border-radius:16px;
+    display:block;
+    transition:.35s;
+}
+
+.cruise-gallery img:hover{
+    transform:scale(1.02);
+}
+
+@media (max-width:768px){
+
+.cruise-gallery{
+grid-template-columns:1fr;
+}
+
+.cruise-gallery img{
+height:220px;
+}
+
+}
