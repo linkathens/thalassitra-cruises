@@ -733,3 +733,40 @@ height:220px;
     height:auto;
     border-radius:20px;
 }
+
+.gallery-item{
+    position:relative;
+    overflow:hidden;
+}
+
+.gallery-caption{
+    position:absolute;
+    left:20px;
+    bottom:18px;
+    color:#fff;
+    z-index:2;
+}
+
+.gallery-caption span{
+    display:block;
+    font-size:36px;
+    font-weight:700;
+    line-height:1;
+}
+
+.gallery-caption h3{
+    margin:5px 0 0;
+    font-size:20px;
+    font-weight:600;
+    color:#fff;
+}
+
+.gallery-item::after{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    bottom:0;
+    height:45%;
+    background:linear-gradient(to top, rgba(0,0,0,.65), rgba(0,0,0,0));
+}
