@@ -721,3 +721,15 @@ height:220px;
 .book-cruise-btn:hover{
     background:#16466f;
 }
+
+.cruise-route-map{
+    text-align:center;
+    margin-top:40px;
+}
+
+.cruise-route-map img{
+    width:75%;
+    max-width:900px;
+    height:auto;
+    border-radius:20px;
+}
