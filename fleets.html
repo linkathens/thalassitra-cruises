@@ -5,187 +5,588 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Around Milos & Poliegos | Thalassitra Cruises</title>
+  <title>Our Fleet | Thalassitra Cruises</title>
 
-  <link rel="stylesheet" href="css/style.css">
+  <meta
+    name="description"
+    content="Discover the Thalassitra Cruises fleet and explore Milos and Poliegos aboard our sailing yachts."
+  >
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Montserrat:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #f3f1f4;
+      color: #1f5d94;
+      font-family: "Montserrat", Arial, sans-serif;
+      line-height: 1.7;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+    .header {
+      position: relative;
+      z-index: 10;
+      height: 220px;
+      background: #1f5d94;
+    }
+
+    .header .container {
+      position: relative;
+      height: 100%;
+    }
+
+    .logo-link {
+      position: absolute;
+      left: 50%;
+      bottom: -74px;
+      width: 260px;
+      transform: translateX(-50%);
+    }
+
+    .logo {
+      width: 100%;
+      height: auto;
+    }
+
+    .fleet-hero {
+      height: 620px;
+      overflow: hidden;
+    }
+
+    .fleet-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    .fleet-intro {
+      padding: 125px 0 90px;
+      text-align: center;
+    }
+
+    .fleet-intro-label {
+      display: block;
+      margin-bottom: 10px;
+      color: #c66e3f;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .fleet-intro h1 {
+      margin-bottom: 22px;
+      font-family: "DM Serif Display", Georgia, serif;
+      font-size: clamp(54px, 7vw, 92px);
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .fleet-intro p {
+      max-width: 760px;
+      margin: 0 auto;
+      color: #416c91;
+      font-size: 18px;
+    }
+
+    .fleet-list {
+      padding-bottom: 110px;
+    }
+
+    .vessel {
+      display: grid;
+      grid-template-columns: 1.08fr 0.92fr;
+      min-height: 620px;
+      margin-bottom: 70px;
+      overflow: hidden;
+      background: #ffffff;
+      box-shadow: 0 18px 45px rgba(31, 93, 148, 0.12);
+    }
+
+    .vessel:nth-child(even) .vessel-image {
+      order: 2;
+    }
+
+    .vessel:nth-child(even) .vessel-content {
+      order: 1;
+    }
+
+    .vessel-image {
+      min-height: 620px;
+    }
+
+    .vessel-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .vessel-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 64px 60px;
+    }
+
+    .vessel-number {
+      margin-bottom: 10px;
+      color: #c66e3f;
+      font-size: 15px;
+      font-weight: 600;
+      letter-spacing: 3px;
+    }
+
+    .vessel h2 {
+      margin-bottom: 22px;
+      font-family: "DM Serif Display", Georgia, serif;
+      font-size: clamp(45px, 5vw, 70px);
+      font-weight: 400;
+      line-height: 1;
+    }
+
+    .vessel-description {
+      margin-bottom: 34px;
+      color: #456d8f;
+      font-size: 16px;
+    }
+
+    .specifications {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      margin-bottom: 38px;
+      border-top: 1px solid rgba(31, 93, 148, 0.18);
+    }
+
+    .specification {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 13px 0;
+      border-bottom: 1px solid rgba(31, 93, 148, 0.18);
+    }
+
+    .specification:nth-child(odd) {
+      padding-right: 22px;
+    }
+
+    .specification:nth-child(even) {
+      padding-left: 22px;
+      border-left: 1px solid rgba(31, 93, 148, 0.18);
+    }
+
+    .specification span:first-child {
+      color: #6b859b;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .specification span:last-child {
+      color: #1f5d94;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .book-button {
+      align-self: flex-start;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-width: 190px;
+      padding: 15px 28px;
+      background: #1f5d94;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      transition: transform 0.2s ease, background 0.2s ease;
+    }
+
+    .book-button:hover {
+      background: #c66e3f;
+      transform: translateY(-2px);
+    }
+
+    .fleet-cta {
+      padding: 90px 24px;
+      background: #1f5d94;
+      color: #ffffff;
+      text-align: center;
+    }
+
+    .fleet-cta h2 {
+      margin-bottom: 18px;
+      font-family: "DM Serif Display", Georgia, serif;
+      font-size: clamp(42px, 5vw, 66px);
+      font-weight: 400;
+      line-height: 1.1;
+    }
+
+    .fleet-cta p {
+      max-width: 680px;
+      margin: 0 auto 32px;
+      color: rgba(255, 255, 255, 0.82);
+      font-size: 17px;
+    }
+
+    .fleet-cta .book-button {
+      align-self: auto;
+      background: #ffffff;
+      color: #1f5d94;
+    }
+
+    .fleet-cta .book-button:hover {
+      background: #c66e3f;
+      color: #ffffff;
+    }
+
+    .footer {
+      padding: 30px 20px;
+      background: #174c79;
+      color: rgba(255, 255, 255, 0.75);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 900px) {
+      .header {
+        height: 170px;
+      }
+
+      .logo-link {
+        bottom: -55px;
+        width: 205px;
+      }
+
+      .fleet-hero {
+        height: 470px;
+      }
+
+      .vessel {
+        grid-template-columns: 1fr;
+      }
+
+      .vessel:nth-child(even) .vessel-image,
+      .vessel:nth-child(even) .vessel-content {
+        order: initial;
+      }
+
+      .vessel-image {
+        min-height: 460px;
+      }
+
+      .vessel-content {
+        padding: 50px 40px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        width: min(100% - 28px, 1180px);
+      }
+
+      .header {
+        height: 130px;
+      }
+
+      .logo-link {
+        bottom: -42px;
+        width: 160px;
+      }
+
+      .fleet-hero {
+        height: 360px;
+      }
+
+      .fleet-intro {
+        padding: 90px 0 60px;
+      }
+
+      .fleet-intro h1 {
+        font-size: 53px;
+      }
+
+      .fleet-intro p {
+        font-size: 16px;
+      }
+
+      .fleet-list {
+        padding-bottom: 65px;
+      }
+
+      .vessel {
+        margin-bottom: 35px;
+      }
+
+      .vessel-image {
+        min-height: 320px;
+      }
+
+      .vessel-content {
+        padding: 38px 25px 42px;
+      }
+
+      .vessel h2 {
+        font-size: 47px;
+      }
+
+      .specifications {
+        grid-template-columns: 1fr;
+      }
+
+      .specification:nth-child(odd),
+      .specification:nth-child(even) {
+        padding-right: 0;
+        padding-left: 0;
+        border-left: 0;
+      }
+
+      .book-button {
+        width: 100%;
+      }
+
+      .fleet-cta {
+        padding: 65px 25px;
+      }
+    }
+  </style>
 </head>
 
-<body class="cruise-detail-page cruise-detail-purple">
+<body>
 
   <header class="header">
     <div class="container">
-      <a href="index.html" aria-label="Back to home">
-        <img src="images/logo.png" alt="Thalassitra Cruises" class="logo">
+
+      <a href="index.html" class="logo-link" aria-label="Back to home">
+        <img
+          src="images/logo.png"
+          alt="Thalassitra Cruises"
+          class="logo"
+        >
       </a>
+
     </div>
   </header>
 
   <main>
 
-    <section class="cruise-detail-hero">
-      <img src="images/cruise-01-hero.jpg" alt="Around Milos and Poliegos cruise">
+    <section class="fleet-hero">
+      <img
+        src="images/fleets/fleets-hero.jpg"
+        alt="Thalassitra Cruises sailing fleet"
+      >
     </section>
 
-    <section class="cruise-detail-intro">
+    <section class="fleet-intro">
+      <div class="container">
 
-      <div class="cruise-detail-title">
-        <span>01</span>
-        <h1>Around Milos<br>&amp; Poliegos</h1>
-      </div>
+        <span class="fleet-intro-label">Our Boats</span>
 
-      <p>
-        A complete sailing experience around Milos and Poliegos,
-        combining impressive beaches, crystal-clear waters
-        and unique coastal landscapes.
-      </p>
-
-    </section>
-
-    <section class="cruise-detail-map">
-
-    <div class="container">
-
-        <h2 class="section-title">Cruise Route</h2>
-
-        <div class="cruise-route-map">
-
-            <img src="images/cruise-01/Cruises_01_map.png"
-                 alt="Around Milos & Poliegos Route">
-
-        </div>
-
-    </div>
-
-</section>
-
-
-
-<section class="cruise-detail-gallery">
-
-    <div class="container">
-
-        <h2 class="section-title">Cruise Highlights</h2>
-
-        <div class="cruise-gallery-grid">
-
-            <div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-01.jpg" alt="adamas">
-
-    <div class="gallery-caption">
-        <span>01</span>
-        <h3>adamas</h3>
-    </div>
-</div>
-            <div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-02.jpg" alt="Klima">
-    <div class="gallery-caption">
-        <span>02</span>
-        <h3>Klima</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-03.jpg" alt="Arkoudes">
-    <div class="gallery-caption">
-        <span>03</span>
-        <h3>Arkoudes</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-04.jpg" alt="Vani">
-    <div class="gallery-caption">
-        <span>04</span>
-        <h3>Vani</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-05.jpg" alt="Kalogries">
-    <div class="gallery-caption">
-        <span>05</span>
-        <h3>Kalogries</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-06.jpg" alt="Sikia Cave">
-    <div class="gallery-caption">
-        <span>06</span>
-        <h3>Sikia Cave</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-07.jpg" alt="Kleftiko">
-    <div class="gallery-caption">
-        <span>07</span>
-        <h3>Kleftiko</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-08.jpg" alt="Gerakas">
-    <div class="gallery-caption">
-        <span>08</span>
-        <h3>Gerakas</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-09.jpg" alt="Thiorichia">
-    <div class="gallery-caption">
-        <span>09</span>
-        <h3>Thiorichia</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-10.jpg" alt="Poliegos">
-    <div class="gallery-caption">
-        <span>10</span>
-        <h3>Poliegos</h3>
-    </div>
-</div>
-
-<div class="gallery-item">
-    <img src="images/cruise-01/cruise-01-stop-11.jpg" alt="Glaronisia">
-    <div class="gallery-caption">
-        <span>11</span>
-        <h3>Glaronisia</h3>
-    </div>
-</div>
-        </div>
-
-    </div>
-
-</section>
-
-</section>
- <section class="book-cruise">
-
-    <div class="container">
-
-        <h2>Ready to explore Milos?</h2>
+        <h1>Our Fleet</h1>
 
         <p>
-            Secure your place aboard and experience one of the most beautiful sailing cruises in the Aegean.
+          Meet our carefully maintained sailing yachts, designed to offer
+          comfort, safety and unforgettable experiences while exploring
+          the breathtaking coastline of Milos and Poliegos.
         </p>
 
-        <a href="https://www.thalassitrasailing.com/contact" target="_blank" class="book-cruise-btn">
-            Book this Cruise
-        </a>
+      </div>
+    </section>
 
-    </div>
+    <section class="fleet-list">
+      <div class="container">
 
-</section>
-  
+        <article class="vessel">
+
+          <div class="vessel-image">
+            <img
+              src="images/fleets/fleets-thalassitra.jpg"
+              alt="Thalassitra sailing yacht"
+            >
+          </div>
+
+          <div class="vessel-content">
+
+            <span class="vessel-number">01</span>
+
+            <h2>Thalassitra</h2>
+
+            <p class="vessel-description">
+              Spacious, elegant and created for memorable days at sea,
+              Thalassitra combines comfort and authentic sailing character.
+              It is the ideal yacht for discovering the hidden beaches,
+              turquoise waters and dramatic landscapes of Milos and Poliegos.
+            </p>
+
+            <div class="specifications">
+
+              <div class="specification">
+                <span>LOA</span>
+                <span>19.75 m</span>
+              </div>
+
+              <div class="specification">
+                <span>Beam</span>
+                <span>6.40 m</span>
+              </div>
+
+              <div class="specification">
+                <span>Draught</span>
+                <span>2.26 m</span>
+              </div>
+
+              <div class="specification">
+                <span>Max Speed</span>
+                <span>14 knots</span>
+              </div>
+
+              <div class="specification">
+                <span>Cruising Speed</span>
+                <span>10 knots</span>
+              </div>
+
+              <div class="specification">
+                <span>Cabins</span>
+                <span>5</span>
+              </div>
+
+            </div>
+
+            <a
+              href="https://www.thalassitrasailing.com/contact"
+              class="book-button"
+              target="_blank"
+              rel="noopener"
+            >
+              Book This Boat
+            </a>
+
+          </div>
+        </article>
+
+        <article class="vessel">
+
+          <div class="vessel-image">
+            <img
+              src="images/fleets/fleets-leloudo.jpg"
+              alt="Leloudo sailing yacht"
+            >
+          </div>
+
+          <div class="vessel-content">
+
+            <span class="vessel-number">02</span>
+
+            <h2>Leloudo</h2>
+
+            <p class="vessel-description">
+              Leloudo offers a more intimate sailing experience with
+              comfortable spaces and a relaxed atmosphere. Its size and
+              character make it perfect for exploring secluded coves and
+              enjoying the natural beauty of the Cyclades.
+            </p>
+
+            <div class="specifications">
+
+              <div class="specification">
+                <span>LOA</span>
+                <span>15.55 m</span>
+              </div>
+
+              <div class="specification">
+                <span>Beam</span>
+                <span>4.40 m</span>
+              </div>
+
+              <div class="specification">
+                <span>Draught</span>
+                <span>2.26 m</span>
+              </div>
+
+              <div class="specification">
+                <span>Max Speed</span>
+                <span>12 knots</span>
+              </div>
+
+              <div class="specification">
+                <span>Cruising Speed</span>
+                <span>8.5 knots</span>
+              </div>
+
+              <div class="specification">
+                <span>Cabins</span>
+                <span>2</span>
+              </div>
+
+            </div>
+
+            <a
+              href="https://www.thalassitrasailing.com/contact"
+              class="book-button"
+              target="_blank"
+              rel="noopener"
+            >
+              Book This Boat
+            </a>
+
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="fleet-cta">
+
+      <h2>Ready to explore Milos?</h2>
+
+      <p>
+        Choose your sailing experience and discover crystal-clear waters,
+        secluded beaches and unforgettable landscapes in the Aegean.
+      </p>
+
+      <a href="cruises.html" class="book-button">
+        View Our Cruises
+      </a>
+
+    </section>
+
   </main>
+
+  <footer class="footer">
+    © Thalassitra Cruises. All rights reserved.
+  </footer>
 
 </body>
 </html>
-
