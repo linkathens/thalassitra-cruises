@@ -490,6 +490,22 @@ transition:all .25s ease;
     line-height:1.05;
 }
 
+.cruise-detail-purple .cruise-detail-title{
+    background:#8a2f8f;
+}
+
+.cruise-detail-green .cruise-detail-title{
+    background:#4f8f3d;
+}
+
+.cruise-detail-brown .cruise-detail-title{
+    background:#8a5a2b;
+}
+
+.cruise-detail-orange .cruise-detail-title{
+    background:#d76a2b;
+}
+
 .cruise-detail-intro p{
 
     max-width:760px;
