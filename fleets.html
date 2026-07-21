@@ -339,28 +339,30 @@
       }
 
       .vessel {
-        margin-bottom: 35px;
-      }
-
-     .vessel-image {
-  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 35px;
 }
 
-.vessel-image img {
+.vessel-image {
+  order: 1 !important;
   width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
+  height: auto !important;
+  min-height: 0 !important;
 }
 
 .vessel-image img {
-  height: auto;
-  object-fit: contain;
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  object-fit: contain !important;
 }
 
-      .vessel-content {
-        padding: 38px 25px 42px;
-      }
+.vessel-content {
+  order: 2 !important;
+  width: 100%;
+  padding: 38px 25px 42px;
+}
 
       .vessel h2 {
         font-size: 47px;
