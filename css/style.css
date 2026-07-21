@@ -853,6 +853,8 @@ height:220px;
     max-width:94vw;
     max-height:88vh;
     object-fit:contain;
+    background:#fff;
+    padding:10px;
     user-select:none;
     -webkit-user-drag:none;
     transform-origin:center center;
